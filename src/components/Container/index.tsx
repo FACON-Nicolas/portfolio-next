@@ -40,5 +40,12 @@ export type StackProps = {
     className?: string
 }
 
+export type SectionProps = {
+    children: React.ReactNode
+    items?: Items
+    className?: string
+    title: string
+}
 export {default as VStack} from './VStack'
 export {default as HStack} from './HStack'
+export * from './Section'
