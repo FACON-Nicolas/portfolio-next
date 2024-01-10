@@ -6,7 +6,7 @@ export const Buttons = ({ horizontal = false }: ButtonsProps) => {
 
     const Stack = useMemo(() => {
         return horizontal ? HStack : VStack
-    }, [])
+    }, [horizontal])
 
     return (
         <Stack>
