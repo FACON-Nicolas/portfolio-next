@@ -15,15 +15,23 @@ export type TextProps = {
     color?: string
     type?: TextType
     children: React.ReactNode
+    className?: string
 }
 
-export const Text = ({ color = "white", type = "p", children }: TextProps) => {
+export const Text = ({
+    color = "white",
+    type = "p",
+    children,
+    className = ""
+}: TextProps) => {
 
     const style = useMemo(() => {
         return textType[type]
             .concat(' ')
+            .concat(className)
+            .concat(' ')
             .concat(`text-${color}`)
-    }, [color, type])
+    }, [color, type, className])
 
     return (
         <p className={style}>{children}</p>
