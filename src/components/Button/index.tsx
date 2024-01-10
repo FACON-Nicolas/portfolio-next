@@ -15,7 +15,6 @@ export const types: Record<string, string> = {
     Contact: "/#contact",
     Projects: "/#projects",
     CV: "/#cv",
-
 }
 
 export type HeaderButtonProps = {
