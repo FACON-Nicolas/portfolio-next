@@ -24,3 +24,5 @@ export type HeaderButtonProps = {
 
 export {default as Button} from './Button'
 export {default as HeaderButton} from './HeaderButton'
+export * from './Anchor'
+export * from './GithubButton'

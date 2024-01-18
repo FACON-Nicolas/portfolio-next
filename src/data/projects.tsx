@@ -1,20 +1,28 @@
-export type Project = {
+export type ProjectType = "Personal" | "School" | "Professional"
+export type IProject = {
     name: string
     inDevelopment: boolean
-    introduction: string
+    description: string
     details?: string
     photo: string
+    github?: string
+    year: number
+    type: ProjectType
+    bgImage: string
+    technologies: string[]
 }
-export const projects: Project[] = [
+export const projects: IProject[] = [
     {
         name: "SaaS for pizzerias",
         inDevelopment: false,
-        introduction: `This SaaS for pizzerias was started in July 2023, it was firstly just for a pizzeria called Da Adamo.
+        description: `This SaaS for pizzerias was started in July 2023, it was firstly just for a pizzeria called Da Adamo.
         Now, many restaurants are waiting a first version of my software.
         
-        Why are they interested ?
-        
-        Because it will be cheap (€900 / year for maintenance and updates), and it will be customizable as they want.`,
-        photo: "https://dam.malt.com/da6bb66f-5a90-4ee2-a1ed-0908a3e7da29"
+        It will be cheap (€900 / year for maintenance and updates), and it will be customizable as they want.`,
+        photo: "SaaS.png",
+        year: 2023,
+        type: "Professional",
+        bgImage: "pizz",
+        technologies: ["TypeScript", "Next.js", "TailwindCSS", "PostgreSQL", "Docker", "Nest.js", "React Native"]
     }
 ]

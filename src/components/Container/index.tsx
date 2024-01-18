@@ -1,7 +1,7 @@
 import React from "react";
 
 export type Justify = "start" | "center" | "end" | "around" | "between" | "evenly"
-export type Items = Extract<Justify, "start" | "center" | "end">
+export type Items = Extract<Justify, "start" | "center" | "end"> | "stretch"
 export type TailwindValues =
     | "0"   | "px"      | "0.5"
     | "1"   | "1.5"     | "2"
@@ -26,7 +26,7 @@ export type SizeValues =
     | "min"     | "max"     | "fit"
 
 export type Spacing = TailwindValues
-export type Size = TailwindValues | SizeValues
+export type Size = TailwindValues | SizeValues | string
 export type Height = Size
 export type Width = Size
 
@@ -38,6 +38,7 @@ export type StackProps = {
     width?: Width
     height?: Height
     className?: string
+    reverse?: boolean
 }
 
 export type SectionProps = {

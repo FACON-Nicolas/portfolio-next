@@ -1,17 +1,28 @@
-import React from "react";
-import {StackProps} from "@/components/Container/index";
+import React, {useMemo} from "react";
+import {StackProps} from "@/components/Container/";
 
 const HStack = ({
     children,
-    justify = "start",
-    items = "start",
+    justify,
+    items,
     spacing = "2",
-    width = "auto",
-    height = "auto",
-    className = ""
+    width = "",
+    height = "",
+    className = "",
+    reverse
 }: StackProps) => {
+
+    const style = useMemo(() => {
+        const justifyValue = !!justify ? `justify-${justify}` : "";
+        const itemsValue = !!items ? `items-${items}` : "";
+        const widthValue = !!width ? `w-${width}` : "";
+        const heightValue = !!height ? `h-${height}` : "";
+        const direction = `flex-row${reverse ? '-reverse' : ''}`
+        return `flex ${justifyValue} ${itemsValue} gap-${spacing} ${direction} ${widthValue} ${heightValue} ${className}`
+    }, [className, height, items, justify, reverse, spacing, width]);
+
     return (
-        <div className={`flex justify-${justify} items-${items} gap-${spacing} w-${width} h-${height} ${className}`}>
+        <div className={style}>
             {children}
         </div>
     )
