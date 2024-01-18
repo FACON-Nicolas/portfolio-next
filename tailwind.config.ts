@@ -24,6 +24,8 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'pizz' : 'url("../assets/images/SaaS.png")',
         'splitter' : 'url("../assets/images/Sprite.png")',
+        'gol' : 'url("../assets/images/conways.jpg")',
+        'pacman' : 'url("../assets/images/pacman.png")',
       },
     },
   },

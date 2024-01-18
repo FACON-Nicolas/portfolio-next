@@ -2,7 +2,7 @@ import {Header, HStack, Section, Text, VStack} from "@/components";
 import Image from "next/image";
 import {presentationTexts, IProject, projects} from "@/data";
 import {colors} from "@/constants";
-import {ProjectView} from "@/components/Project";
+import {Project} from "@/components/Project";
 
 export default function Home() {
     return (
@@ -23,15 +23,15 @@ export default function Home() {
                 </HStack>
             </Section>
             <Section title="My projects" className={`bg-${colors.header}`}>
-                <VStack className={`bg-${colors.header}`} items="center">
+                <HStack className={`bg-${colors.header} flex-wrap w-[min(80rem,90vw)] mb-10`} justify="center">
                     {projects.map((project: IProject, index: number) => (
-                        <ProjectView
+                        <Project
                             project={project}
                             index={index}
                             key={index}
                         />
                     ))}
-                </VStack>
+                </HStack>
             </Section>
         </VStack>
     )
