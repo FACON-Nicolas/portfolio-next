@@ -13,7 +13,7 @@ export const Project = ({ project, index }: ProjectProps) => {
         <BackgroundImage
             bgImage={project.bgImage}
             className="w-[min(90vw,30rem)] rounded-xl shadow-lg shadow-black">
-            <VStack width="full" height="full" spacing="5" className="rounded-xl bg-[#000C] p-10">
+            <VStack width="full" height="full" spacing="5" justify="around" className="rounded-xl bg-[#000C] p-10">
                 <Text type="h2" className="hover:text-green-400 transition">{project.name}</Text>
                 <HStack>
                     <Text color="green-400">{project.type} project • {project.year}</Text>

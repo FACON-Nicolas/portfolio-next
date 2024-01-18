@@ -1,4 +1,4 @@
-import {Header, HStack, Section, Text, VStack} from "@/components";
+import {HStack, Section, Text, VStack} from "@/components";
 import Image from "next/image";
 import {presentationTexts, IProject, projects} from "@/data";
 import {colors} from "@/constants";
@@ -7,7 +7,6 @@ import {Project} from "@/components/Project";
 export default function Home() {
     return (
         <VStack items="center" width="screen" spacing="10">
-            <Header />
             <Section title="Who Am I ?">
                 <HStack className="w-[min(70rem,80vw)] flex-wrap" justify="around" items="center">
                     <Image

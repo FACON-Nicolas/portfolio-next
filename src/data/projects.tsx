@@ -14,7 +14,7 @@ export type IProject = {
 }
 export const projects: IProject[] = [
     {
-        name: "SaaS for pizzerias",
+        name: "Pizz (Pizzeria SaaS)",
         inDevelopment: false,
         description: `This SaaS for pizzerias was started in July 2023, it was firstly just for a pizzeria called Da Adamo.
         Now, many restaurants are waiting a first version of my software.
