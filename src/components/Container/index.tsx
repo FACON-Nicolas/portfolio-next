@@ -50,3 +50,4 @@ export type SectionProps = {
 export {default as VStack} from './VStack'
 export {default as HStack} from './HStack'
 export * from './Section'
+export * from './Card'
