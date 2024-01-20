@@ -35,6 +35,6 @@ export const hobbies: IHobby[] = [
         description: `I like to learn foreign languages. I like to learn English and Spanish.
         I like to learn foreign languages to discover new cultures and to communicate with people from other countries.`,
         image: "language",
-        more: "This picture has been taken by myself at the Dublin Trinity College in Ireland."
+        more: "This picture has been taken by myself at Dublin Trinity College in Ireland."
     }
 ]

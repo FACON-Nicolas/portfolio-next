@@ -2,7 +2,6 @@ import {HStack, Section, VStack, Project, TextIcon, Hobby} from "@/components";
 import Image from "next/image";
 import {presentationTexts, IProject, projects, Presentation, hobbies, IHobby} from "@/data";
 import {colors} from "@/constants";
-import {Fragment} from "react";
 
 export default function Home() {
     return (

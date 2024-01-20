@@ -9,6 +9,7 @@ export const Project = ({ project }: ProjectProps) => {
     return (
         <Card
             title={project.name}
+            justify="between"
             description={project.description}
             image={project.bgImage}
             info={`${project.type} project • ${project.year}`}>
