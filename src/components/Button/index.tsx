@@ -8,6 +8,7 @@ export type ButtonProps = {
     items?: Items
     bgColor?: string
     onClick?: OnClick
+    className?: string
 }
 
 export const types: Record<string, string> = {

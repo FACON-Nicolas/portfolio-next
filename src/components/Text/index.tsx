@@ -18,6 +18,8 @@ export type TextProps = {
     className?: string
 }
 
+export * from './TextIcon'
+
 export const Text = ({
     color = "white",
     type = "p",
