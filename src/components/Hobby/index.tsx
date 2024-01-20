@@ -6,12 +6,6 @@ export type HobbyProps = {
 }
 export const Hobby = ({ hobby }: HobbyProps) => {
     return (
-        <HobbyMobile hobby={hobby} />
-    )
-}
-
-export const HobbyMobile = ({ hobby }: HobbyProps) => {
-    return (
         <Card
             title={hobby.title}
             image={hobby.image}
