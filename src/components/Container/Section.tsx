@@ -9,7 +9,7 @@ export const Section = ({
 }: SectionProps) => {
 
     const style = useMemo(() => {
-        return className + " pt-10";
+        return className + " py-10";
     }, [className])
 
     return (
