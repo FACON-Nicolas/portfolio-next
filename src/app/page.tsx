@@ -1,6 +1,6 @@
-import {HStack, Section, VStack, Project, TextIcon, Hobby} from "@/components";
+import {HStack, Section, VStack, TextIcon, CardSection} from "@/components";
 import Image from "next/image";
-import {presentationTexts, IProject, projects, Presentation, hobbies, IHobby} from "@/data";
+import {presentationTexts, projects, Presentation, hobbies} from "@/data";
 import {colors} from "@/constants";
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
                     <Image
                         className="rounded-full lg:w-[min(45%,35rem)] aspect-square w-[80vw]"
                         src={require('../assets/images/profile.jpeg')}
-                        alt={"It's my avatar"}
+                        alt="It's my avatar"
                     />
                     <VStack className="lg:w-[min(45%,35rem)] w-[80vw] gap-5">
                         {presentationTexts.map((text: Presentation, index: number) => (
@@ -22,21 +22,8 @@ export default function Home() {
                     </VStack>
                 </HStack>
             </Section>
-            <Section title="My projects" className={`bg-${colors.header}`}>
-                <HStack className={`bg-${colors.header} flex-wrap w-[min(80rem,85vw)]`} justify="center">
-                    {projects.map((project: IProject, index: number) => (
-                        <Project
-                            project={project}
-                            key={index}
-                        />
-                    ))}
-                </HStack>
-            </Section>
-            <Section title="My hobbies">
-                <HStack className={`flex-wrap w-[min(80rem,85vw)]`} justify="center">
-                    {hobbies.map((hobby: IHobby, index: number) => <Hobby hobby={hobby} key={index} />)}
-                </HStack>
-            </Section>
+            <CardSection title="My projects" bgColor={colors.header} elements={projects} />
+            <CardSection title="My hobbies" elements={hobbies} />
         </VStack>
     )
 }
