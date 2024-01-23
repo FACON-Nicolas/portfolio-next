@@ -23,7 +23,7 @@ export const Skills = ({ type }: SkillProps) => {
     )
 }
 
-export const Skill = ({ skill }: { skill: ISkill }) => {
+const Skill = ({ skill }: { skill: ISkill }) => {
     return (
         <HStack items="center" spacing="5" justify="between">
             <SkillLogo src={require(`../../assets/skills/${skill.image}`)} alt={skill.name} />
@@ -33,7 +33,7 @@ export const Skill = ({ skill }: { skill: ISkill }) => {
     )
 }
 
-export const SkillLevel = ({ level, max }: { level: number, max: number }) => {
+const SkillLevel = ({ level, max }: { level: number, max: number }) => {
     return (
         <HStack>
             {range(max).map((_, index) => (

@@ -1,6 +1,6 @@
 import {HStack, Section, VStack, TextIcon, CardSection} from "@/components";
 import Image from "next/image";
-import {presentationTexts, projects, Presentation, hobbies, skillTypes} from "@/data";
+import {presentationTexts, projects, Presentation, hobbies, skillTypes, jobs} from "@/data";
 import {colors} from "@/constants";
 
 export default function Home() {
@@ -25,6 +25,7 @@ export default function Home() {
             <CardSection title="My projects" bgColor={colors.header} elements={projects} />
             <CardSection title="My hobbies" elements={hobbies} />
             <CardSection title="My skills" bgColor={colors.header} elements={skillTypes} />
+            <CardSection title="My Jobs" elements={jobs} />
         </VStack>
     )
 }
