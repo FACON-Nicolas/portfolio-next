@@ -6,3 +6,4 @@ export * from "./Project"
 export * from "./Image"
 export * from "./Icon"
 export * from './Hobby'
+export * from './Skill'

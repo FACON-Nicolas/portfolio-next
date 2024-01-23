@@ -1,5 +1,6 @@
 import {IProject} from "@/data";
 import {Card, GithubButton, Text} from "@/components";
+import {DescriptionCard} from "@/components/Container/";
 
 export type ProjectProps = {
     project: IProject
@@ -7,7 +8,7 @@ export type ProjectProps = {
 
 export const Project = ({ project }: ProjectProps) => {
     return (
-        <Card
+        <DescriptionCard
             title={project.name}
             justify="between"
             description={project.description}
@@ -15,6 +16,6 @@ export const Project = ({ project }: ProjectProps) => {
             info={`${project.type} project • ${project.year}`}>
             <Text color="green-400">{project.technologies.join(' • ')}</Text>
             {!!project.github && <GithubButton href={project.github} />}
-        </Card>
+        </DescriptionCard>
     )
 }

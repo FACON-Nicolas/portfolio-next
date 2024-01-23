@@ -1,24 +1,23 @@
-import React, {Fragment} from "react";
-import {CardContainer, Hobby, Project, Section, SectionProps} from "@/components";
-import {IHobby, IProject} from "@/data";
-import {CardDataType, getCardDataType} from "@/utils";
+import React from "react";
+import {CardContainer, Hobby, Project, Section, SectionProps, Skills} from "@/components";
+import {IHobby, IProject, SkillType} from "@/data";
+import {getCardDataType} from "@/utils";
 
 type CardSectionProps = Omit<SectionProps, "items" | "children"> & {
     bgColor?: string
-    elements: IProject[] | IHobby[]
+    elements: IProject[] | IHobby[] | readonly SkillType[]
 }
 
-const CardElement = ({ element }: { element: IProject | IHobby }) => {
-    return (
-        <Fragment>
-            {getCardDataType(element) === "project" ? (
-                <Project project={element as IProject} />
-            ) : (
-                <Hobby hobby={element as IHobby} />
-            )}
-        </Fragment>
-    )
-};
+const Element = ({ element }: { element: IProject | IHobby | SkillType }) => {
+    switch (getCardDataType(element)) {
+        case "project":
+            return <Project project={element as IProject} />
+        case "hobby":
+            return <Hobby hobby={element as IHobby} />
+        default:
+            return <Skills type={element as SkillType} />
+    }
+}
 
 export const CardSection = ({ 
     className = "",
@@ -27,7 +26,7 @@ export const CardSection = ({
     elements
 }: CardSectionProps) => {
 
-    const items = elements.map((element, index) => <CardElement element={element} key={index} />)
+    const items = elements.map((element, index) => <Element element={element} key={index} />)
 
     return (
         <Section title={title} className={`bg-${bgColor}`}>
