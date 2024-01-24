@@ -13,7 +13,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className + " overflow-x-hidden"}>
-        <Header />
         {children}
         <HStack className="bg-[#151515]" justify="around">
             <Text>Contact me</Text>
