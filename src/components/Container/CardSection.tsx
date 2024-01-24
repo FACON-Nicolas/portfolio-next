@@ -4,7 +4,6 @@ import {IHobby, IJob, IProject, SkillType} from "@/data";
 import {getCardDataType} from "@/utils";
 
 type CardSectionProps = Omit<SectionProps, "items" | "children"> & {
-    bgColor?: string
     elements: IProject[] | IHobby[] | readonly SkillType[] | IJob[]
 }
 
@@ -23,7 +22,6 @@ const Element = ({ element }: { element: IProject | IHobby | SkillType | IJob })
 
 export const CardSection = ({ 
     className = "",
-    bgColor = "[#151515]",
     title,
     elements
 }: CardSectionProps) => {
@@ -31,8 +29,8 @@ export const CardSection = ({
     const items = elements.map((element, index) => <Element element={element} key={index} />)
 
     return (
-        <Section title={title} className={`bg-${bgColor}`}>
-            <CardContainer bgColor={bgColor} className={className}>
+        <Section title={title} className={className}>
+            <CardContainer className={className}>
                 {items}
             </CardContainer>
         </Section>

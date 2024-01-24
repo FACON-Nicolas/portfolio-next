@@ -6,7 +6,6 @@ export type ButtonProps = {
     children: React.ReactNode
     justify?: Justify
     items?: Items
-    bgColor?: string
     onClick?: OnClick
     className?: string
 }

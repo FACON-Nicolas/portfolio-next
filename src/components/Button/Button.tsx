@@ -6,12 +6,11 @@ const Button = ({
     children,
     justify = "center",
     items = "center",
-    bgColor = "transparent",
     className = "",
     onClick = () => {}
 }: ButtonProps) => {
     return (
-        <button className={`justify-${justify} items-${items} bg-${bgColor} ${className}`} onClick={onClick}>
+        <button className={`justify-${justify} items-${items} ${className}`} onClick={onClick}>
             {children}
         </button>
     )

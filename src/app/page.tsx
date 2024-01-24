@@ -22,9 +22,9 @@ export default function Home() {
                     </VStack>
                 </HStack>
             </Section>
-            <CardSection title="My projects" bgColor={colors.header} elements={projects} />
+            <CardSection title="My projects" className="bg-blue-900" elements={projects} />
             <CardSection title="My hobbies" elements={hobbies} />
-            <CardSection title="My skills" bgColor={colors.header} elements={skillTypes} />
+            <CardSection title="My skills" className="bg-blue-900" elements={skillTypes} />
             <CardSection title="My Jobs" elements={jobs} />
         </VStack>
     )

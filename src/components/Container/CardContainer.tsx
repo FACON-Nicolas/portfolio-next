@@ -4,12 +4,11 @@ import React from "react";
 type CardContainerProps = {
     children?: React.ReactNode
     className?: string
-    bgColor?: string
 }
 
-export const CardContainer = ({ children, className = "", bgColor = "[#151515]" }: CardContainerProps) => {
+export const CardContainer = ({ children, className = "" }: CardContainerProps) => {
     return (
-        <HStack className={`bg-${bgColor} flex-wrap w-[min(80rem,85vw)] ${className}`} justify="center">
+        <HStack className={`flex-wrap w-[min(80rem,85vw)] ${className}`} justify="center">
             {children}
         </HStack>
     )

@@ -23,7 +23,7 @@ export const projects: IProject[] = [
         photo: "SaaS.png",
         year: 2023,
         type: "Professional",
-        bgImage: "pizz",
+        bgImage: "i_pizz",
         technologies: ["TypeScript", "Next.js", "TailwindCSS", "PostgreSQL", "Docker", "Nest.js", "React Native"]
     }, {
         name: "Sprite Sheet Splitter",
@@ -34,7 +34,7 @@ export const projects: IProject[] = [
         photo: "Sprite.png",
         year: 2022,
         type: "Personal",
-        bgImage: "splitter",
+        bgImage: "i_splitter",
         technologies: ["Python", "Flet", "PIL"],
         openSource: true,
         github: "https://github.com/FACON-Nicolas/Sprite-Sheet-Splitter"
@@ -49,7 +49,7 @@ export const projects: IProject[] = [
         photo: "conways.png",
         year: 2022,
         type: "Personal",
-        bgImage: "gol",
+        bgImage: "i_gol",
         technologies: ["C++", "SFML"],
         openSource: true,
         github: "https://github.com/FACON-Nicolas/conways-cpp"
@@ -63,7 +63,7 @@ export const projects: IProject[] = [
         photo: "conways.png",
         year: 2022,
         type: "Personal",
-        bgImage: "pacman",
+        bgImage: "i_pacman",
         technologies: ["C++", "SFML", "Boost"],
         openSource: true,
         github: "https://github.com/FACON-Nicolas/pacman"
