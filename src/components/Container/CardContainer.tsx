@@ -8,7 +8,7 @@ type CardContainerProps = {
 
 export const CardContainer = ({ children, className = "" }: CardContainerProps) => {
     return (
-        <HStack className={`flex-wrap w-[min(80rem,85vw)] ${className}`} justify="center">
+        <HStack className={`flex-wrap w-min-80-rem-85-vw ${className}`} justify="center" spacing="2">
             {children}
         </HStack>
     )

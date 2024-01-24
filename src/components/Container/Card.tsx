@@ -20,9 +20,9 @@ export const Card = ({
     return (
         <BackgroundImage
             bgImage={image}
-            className="w-[min(90vw,30rem)] rounded-xl shadow-lg shadow-black">
+            className="w-90-vw-30-rem rounded-xl shadow-lg shadow-black">
             <VStack
-                className={`rounded-xl bg-[#000C] p-10 ${className}`}
+                className={`rounded-xl bg-demi-dark p-10 ${className}`}
                 width="full"
                 height="full"
                 justify={justify}

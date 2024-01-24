@@ -5,15 +5,15 @@ import {colors} from "@/constants";
 
 export default function Home() {
     return (
-        <VStack items="center" width="screen" className={`bg-[#151515]`}>
+        <VStack items="center" width="screen" className="bg-dark">
             <Section title="Who Am I ?">
-                <HStack className="w-[min(70rem,80vw)] flex-wrap" justify="around" items="center">
+                <HStack className="w-70-rem-80-percent flex-wrap" justify="around" items="center">
                     <Image
-                        className="rounded-full lg:w-[min(45%,35rem)] aspect-square w-[80vw]"
+                        className="rounded-full w-profile-pic aspect-square"
                         src={require('../assets/images/profile.jpeg')}
                         alt="It's my avatar"
                     />
-                    <VStack className="lg:w-[min(45%,35rem)] w-[80vw] gap-5">
+                    <VStack className="w-profile-pic gap-5">
                         {presentationTexts.map((text: Presentation, index: number) => (
                             <TextIcon key={index} className="leading-8 text-lg" icon={text.icon}>
                                 {text.text}

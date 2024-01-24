@@ -26,8 +26,189 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-@layer utilities {
-  .custom-header {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw));
+.justify-center {
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+}
+
+.bg-blue-900 {
+  background-color: #1a365d;
+}
+
+.bg-i_pizz {
+  background-image: url('../assets/images/SaaS.png');
+}
+
+.bg-dark {
+  background-color: #151515;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.w-70-rem-80-percent {
+  width: min(70rem, 80vw);
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.inline {
+    display: inline;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.text-green-400 {
+  color: #10b981;
+}
+
+.w-profile-pic {
+  width: min(35rem, 45%)
+}
+
+.leading-8 {
+  line-height: 2rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .w-profile-pic {
+    width: 80vw;
   }
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.bg-cover {
+    background-size: cover;
+}
+
+.bg-center {
+    background-position: center;
+}
+
+.w-90-vw-30-rem {
+    width: min(90vw, 30rem);
+}
+
+.bg-demi-dark {
+    background-color: #000C;
+}
+
+.p-10 {
+    padding: 2.5rem;
+}
+
+.rounded-xl {
+    border-radius: 1rem;
+}
+
+.shadow {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.w-min-80-rem-85-vw {
+    width: min(80rem, 85vw);
+}
+
+.gap-2 {
+    gap: 0.5rem;
+}
+
+.bg-i_splitter {
+    background-image: url('../assets/images/Sprite.png');
+}
+
+.bg-i_gol {
+    background-image: url('../assets/images/conways.jpg');
+}
+
+.bg-i_pacman {
+    background-image: url('../assets/images/pacman.png');
+}
+
+.bg-i_read {
+    background-image: url('../assets/images/read.jpeg');
+}
+
+.shadow-black {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.75);
 }
