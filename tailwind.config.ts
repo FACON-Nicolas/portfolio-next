@@ -30,7 +30,7 @@ const config: Config = {
         'language' : 'url("../assets/images/language.png")',
         'walk' : 'url("../assets/images/walk.jpeg")',
         'louvre' : 'url("../assets/images/louvre.jpg")',
-        'lenrek' : 'url("../assets/images/lenrek.jpg")',
+        'lenrek' : 'url("../assets/images/lenrek.png")',
         'library' : 'url("../assets/images/library.jpg")',
       },
     },
