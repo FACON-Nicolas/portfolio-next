@@ -13,7 +13,7 @@ const config: Config = {
     {pattern: /h-./},
     {pattern: /gap-./},
     {pattern: /text-./},
-    {pattern: /font-./},
+    {pattern: /font-bold/},
     {pattern: /bg-./}
   ],
   theme: {
