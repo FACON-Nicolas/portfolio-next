@@ -192,7 +192,7 @@ body {
 .gap-2 {
     gap: 0.5rem;
 }
-
+/*
 .bg-i_splitter {
     background-image: url('../assets/images/Sprite.png');
 }
@@ -236,7 +236,7 @@ body {
 .bg-i_language {
     background-image: url('../assets/images/language.png');
 }
-
+*/
 .filter:focus {
     -webkit-filter: brightness(0.5);
     filter: brightness(0.5);
