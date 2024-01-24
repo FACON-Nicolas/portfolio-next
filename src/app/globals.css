@@ -212,3 +212,50 @@ body {
 .shadow-black {
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.75);
 }
+
+.bg-i_louvre {
+    background-image: url('../assets/images/louvre.jpg');
+}
+
+.bg-i_lenrek {
+    background-image: url('../assets/images/lenrek.jpg');
+}
+
+.bg-i_library {
+    background-image: url('../assets/images/library.jpg');
+}
+
+.bg-i_code {
+    background-image: url('../assets/images/code.png');
+}
+
+.bg-i_walk {
+    background-image: url('../assets/images/walk.jpeg');
+}
+
+.bg-i_language {
+    background-image: url('../assets/images/language.png');
+}
+
+.filter:focus {
+    -webkit-filter: brightness(0.5);
+    filter: brightness(0.5);
+}
+
+.filter:hover {
+    -webkit-filter: brightness(1);
+    filter: brightness(1);
+}
+
+.filter {
+    -webkit-filter: brightness(2);
+    filter: brightness(2);
+}
+
+.text-yellow-400 {
+    color: #fbbf24;
+}
+
+.text-gray-400 {
+    color: #9ca3af;
+}

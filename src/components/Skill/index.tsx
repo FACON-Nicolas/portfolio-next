@@ -37,7 +37,7 @@ const SkillLevel = ({ level, max }: { level: number, max: number }) => {
     return (
         <HStack>
             {range(max).map((_, index) => (
-                <Text key={index} type="h1" color={index < level ? "yellow-400" : "gray-400"}>•</Text>
+                <Text key={index} type="h3" color={index < level ? "yellow-400" : "gray-400"}>•</Text>
             ))}
         </HStack>
     )
