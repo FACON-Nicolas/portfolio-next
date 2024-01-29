@@ -101,6 +101,10 @@ body {
 }
  */
 
+.text-white {
+  color: #fff;
+}
+
 .bg-dark {
   background-color: #151515;
 }

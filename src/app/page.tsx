@@ -1,7 +1,6 @@
 import {HStack, Section, VStack, TextIcon, CardSection} from "@/components";
 import Image from "next/image";
 import {presentationTexts, projects, Presentation, hobbies, skillTypes, jobs} from "@/data";
-import {colors} from "@/constants";
 
 export default function Home() {
     return (
